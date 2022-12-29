@@ -1,0 +1,154 @@
+.Firstscreen{
+padding:200px 50px;
+color: white;
+background-color: black;
+background-image: url(../img/firstscreen.png);
+background-repeat: no-repeat;
+background-position-x: right;
+}
+.Firstscreen_button {padding: 0px 10px;}
+
+.Firstscreen_title {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 89px;}
+
+.Firstscreen_subtitle{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    margin: 0 0 12px 0;
+}
+.Firstscreen_discription{
+    font-size: 25px;
+    line-height: 34px;
+    margin: 0 0 36px 0;
+}
+.Firstscreen_button{ 
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 23px 49px;
+}
+/*Abaut*/
+.About {
+    margin: 125px 0;
+}
+
+    .ing-fluid{ max-width: 100%; height: auto;}
+        .abaut-title{
+        font-weight: 500;
+        font-size: 96px;
+        line-height: 157%;}
+    
+    .column-title{
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 90px;
+        color: rgba(255, 174, 0, 0.75);
+        margin-bottom: 24px;
+    }
+    .column-subtitle{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        color: #424242;
+        margin-bottom: 48px;}
+        .too .column-title{
+            color: rgba(7, 50, 255, 0.75); 
+        }
+        .too{margin: 201px;}
+        .free .column-title{
+            color: rgba(169, 17, 207, 0.75);;
+        }
+        .free{
+            margin: 44px;}
+
+.verska2{
+    padding: 120px 0;
+}
+    .container2 {
+        padding: 142px 0 80px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1267px;
+        min-width: 800px;
+        background-image: url(../img/Pic1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+        .Name2{
+                width: 100%;
+                max-width: 440px;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 70px;
+                display: flex;
+                color: #000000;
+                margin-bottom: 27px;
+        }
+        .discriptionv2{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #484848;
+                width: 100%;
+                max-width: 600px;
+                min-width: 100px;
+                margin-bottom: 38px;
+                padding: 0 10px;                
+        }
+        .button-ver2{
+                font-size: 20px;
+                line-height: 20px;
+                display: flex;
+                color: #FFFFFF;
+                width: 100%;
+                max-width: 251px;
+                padding: 20px 50px;
+                background: #C83267;
+                border-color: #C83267;
+                border-radius: 4px;
+        }
+        
+        
+.verska3{
+    padding: 140px 0;
+        margin: 0 auto;
+    }
+    .container3{
+        width: 100%;
+        max-width: 1395px;
+        margin: 0 auto;
+    }
+    .row2{
+        display: flex;
+        justify-content: space-between;
+        }
+        .columnV31 {
+            width: 100%;
+            height: auto;
+            max-width: 592px;
+            margin: 0 auto;
+                    }
+        .columnV32 {
+            margin: 0 20px auto 20px;
+        }
+            .Name3 {
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 60px;
+                color: #000000;
+                margin-bottom: 48px;
+            }
+            .discriptionv3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 42px;
+                color: #000000;
+                margin-bottom: 32px
+
+            }

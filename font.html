@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson8</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap');
+    </style>
+<body> 
+    <header>
+        <nav class="site-navigation">
+            <a href="index.html"> <img src="assets/img/logo.png" alt=""> </a>
+            <ul style="align-items: center;">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="table.html">Table</a></li>
+                <li> <a href="flex-box.html">Flexbox</a></li>   
+                <li> <a href="position.html">Position</a></li> 
+                <li> <a href="font.html">Fonts</a></li>   
+                <li> <a href="main-tags.html">Main-tags</a></li>
+                <li> <a href="nth-child.html">Nth-child</a></li> 
+                <li> <a href="bootstrap.html">Bootstrap</a></li>      
+            </ul>    
+        </nav>  
+         
+    </header>
+<main>
+    
+    <section class="text-template">
+        <div class="container-font">
+            <h1  class="container__title"> Способы импорта и подключения шрифтов </h1>
+            <div class="subblock">
+                <h2 class="subblock__title">Font 'Playfair Display' (.ttf; @font-face )</h2>
+                <ul class="ul-subblock">
+                    <li class="fw-400"> fw-400 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-500"> fw-500 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-600"> fw-600 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-700"> fw-700 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-800"> fw-800 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-900"> fw-900 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+            </ul>
+            </div>
+            <div class="subblock link">
+                <h2 class="subblock__title">Font 'Cinzel' (.ttf; link )</h2>
+                <ul class="ul-subblock link">
+                    <li class="fw-400"> fw-400 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-500"> fw-500 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-600"> fw-600 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-700"> fw-700 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-900"> fw-900 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+            </ul>
+            </div>
+            <div class="subblock import">
+                <h2 class="subblock__title">Font 'Caveat' (.ttf; @import )</h2>
+                <ul class="ul-subblock import">
+                    <li class="fw-400"> fw-400 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-500"> fw-500 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-600"> fw-600 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                    <li class="fw-700"> fw-700 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</li>
+                </ul>
+            </div>
+            <div class="subblock otf">
+                <h2 class="subblock__title">Font 'Yevida Potens' (.otf; @font-face )</h2>
+                <p class="font-otf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam aperiam magnam placeat quo.  </p>
+            </div>
+            <div class="subblock woff">
+                <h2 class="subblock__title">Font 'DiplomataSC-Regular' (.woof; @font-face )</h2>
+                <p class="font-woff">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam aperiam magnam placeat quo.  </p>
+            </div>
+            
+        </div>
+        <div class="container__icon">
+            <h1  class="container__title"> Образцы иконок </h1>
+            <div class="block-icon">
+                <div class="subblock__icon">
+                    <img src="assets/img/icon1.png" alt="icon1">
+                    <h3 class="icon-title">Mandalas1</h3>
+                </div>
+                <div class="subblock__icon">
+                    <img src="assets/img/icon2.png" alt="icon2">
+                    <h3 class="icon-title">Mandalas2</h3>
+                </div>
+                <div class="subblock__icon">
+                    <img src="assets/img/icon3.png" alt="icon3">
+                    <h3 class="icon-title">Mandalas3</h3>
+                </div>
+                <div class="subblock__icon">
+                    <img src="assets/img/icon4.png" alt="icon4">
+                    <h3 class="icon-title">Mandalas4</h3>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container__figures">
+            <h1  class="container__title"> Геометрические фигуры </h1>
+            <div class="block-figures">
+                <div class="subblock__figures">
+                    <div class="circle">
+                        <p class="title-figures">круг</p>
+                    </div>
+                    <div class="square">
+                        <p class="title-figures">квадрат</p>
+                    </div>
+                    <div class="rectangle">
+                        <p class="title-figures">прямоугольник</p>
+                    </div>
+                    <div class="trapezium">
+                        <p class="title-figures">трапеция</p>
+                    </div>
+                </div>
+                <div class="subblock__figures">
+                    <div class="triangle">
+                        <p class="title-figures"></p>
+                    </div>
+                    <div class="oval">
+                        <p class="title-figures">овал</p>
+                    </div>
+                    <div class="parallelogram">
+                        <p class="title-figures">параллелограмм</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+    </section>

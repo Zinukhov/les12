@@ -1,0 +1,79 @@
+.exampl {
+    background-color: #e8aca8;
+    padding: 60px;
+    margin-bottom: 36px;}
+    .exampl_title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+         }
+            
+        .exampl_list-iteam {
+            font-size: 24px;
+            background-color: coral;
+            width: 72px;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px rgb(181, 105, 105) solid;
+            color: #a71212;           
+        }
+        
+        .d-flex{display: flex; border: 3px solid red;}
+        .flex-direction-row-reverse{flex-direction: row-reverse;
+            border: 3px solid red;}
+        .flex-direction-column{
+            flex-direction: column;
+            height: 700px;
+            border: 3px solid red;
+        }
+        .flex-direction-column-reverse{
+            flex-direction: column-reverse;
+            height: 700px;
+            border: 3px solid red;}
+        .justify-content-flex-end{
+            justify-content: flex-end;
+        }
+        .justify-content-flex-center{
+            justify-content: center;
+        }
+        .justify-content-flex-space-between{
+            justify-content: space-between; border: 3px solid rgb(107, 2, 2); 
+        }
+        .justify-content-flex-space-araund{
+            justify-content: space-around; border: 3px solid  rgb(107, 2, 2);
+        }
+        .justify-content-flex-space-evenly{
+            justify-content: space-evenly; border: 3px solid  rgb(107, 2, 2);
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+        #five {
+            align-self: flex-end;
+        }
+        #three {
+            align-self: stretch; width: auto;
+        }
+        #seven {
+            align-self: flex-start;}
+        #one {
+            align-self: flex-start; width: 50%; margin: 0 auto;
+        }
+
+        .flex-graw .exampl_list-iteam{ flex-grow: 1;
+            width: 100px;}
+        #first {flex-grow: 10;}
+       
+        .flex-shrink .exampl_list-iteam {flex-shrink: 1;
+            width: 250px; }
+        #second{flex-shrink: 2;}
+        
+
+               
+     
+    

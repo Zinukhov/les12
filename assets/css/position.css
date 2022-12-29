@@ -1,0 +1,96 @@
+.exampl-position {
+    background-color: #e8aca8;
+    padding: 60px;
+    height: 500px;
+    margin: 10px 36px 10px 36px;
+
+}
+
+.position .exampl_list-iteam {
+    font-size: 40px;
+    width:200px;
+    height: 150px;
+    border-radius: 20%;
+}
+.position {
+    border: none;
+    justify-content: center;}
+.font_p{
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 auto 20px;
+    text-align: justify ;
+}
+    #relative-one{
+        position: relative;
+        right: 380px;
+        top: 70px;
+    }
+    #relative-two{
+        position: relative;
+        bottom: -40px;
+        left: 110px;
+     }
+     #relative-three{
+        position: absolute;
+        left: 176px;
+        top: 1519px;
+     }
+     #relative-four{
+        position: relative;
+        top: 124px;
+        left: -71px
+     }
+        .relative-child{
+        font-size: 20px;
+        background-color: rgb(205 89 96);
+        width: 128px;
+        height: 31px;
+        display: flex;
+        border: 1px rgb(74 55 171) solid;
+        color: #2232a3;
+        border-radius: 20%;
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        }
+    #fixed-five{
+        position: fixed;
+        bottom: 20px;
+        right: 50px; 
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        font-size: 23px;
+        background: url(../img/icon_tel.png) center/contain no-repeat;
+        
+        }
+.exampl-stiky{
+    background-color: #e8aca8;
+    height: 100%;
+    margin: 10px 36px 10px 36px;
+    padding: 22px 49px 55px;
+}
+
+.exampl-stiky li {
+    font-size: 24px;
+    padding: 13px 0;
+    color: #ad2121;
+    text-align: center;
+}
+.exampl-stiky ul {
+    height: 260px;
+    width: 75%;
+    margin: 10px auto;
+    background: #ded8bef0;
+    overflow: auto;
+    position: relative;
+}
+li.item-stike {
+    font-size: 30px;
+    font-style: italic;
+    padding: 14px;
+    background: aqua;
+    position: sticky;
+    top: 0px;
+}

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap 5</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-style.css">
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+
+            
+</head>
+<body class="page-bootstrap">
+    <main>
+    <header>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid  ">
+          <a href="index.html"> <img src="assets/img/logo.png" alt=""> </a>
+          <button class="navbar-toggler mx-1 bg-Light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"> <a  class="nav-link active text-black-50" aria-current="page"href="index.html">Home</a></li>
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="table.html">Table</a></li>
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="flex-box.html">Flexbox</a></li>   
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="position.html">Position</a></li> 
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="font.html">Fonts</a></li>   
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="main-tags.html">Main-tags</a></li>
+                <li class="nav-item"> <a class="nav-link active text-black-50" aria-current="page" href="nth-child.html">Nth-child</a></li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black-50" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Bootstrap-part
+                </a>
+                <ul class="dropdown-menu">
+                 <li><a class="dropdown-item text-black-50" href="#form-range">Form (Range)</a></li>
+                <li><a class="dropdown-item text-black-50" href="#breakpoint">Breakpoint</a></li>
+                <li><a class="dropdown-item text-black-50" href="#accordion">Accordion</a></li>
+                <li><a class="dropdown-item text-black-50" href="#alert">Alert</a></li>
+                <li><a class="dropdown-item text-black-50" href="#button">Button</a></li>
+                <li><a class="dropdown-item text-black-50" href="#dropdown">Dropdown button</a></li>
+                <li><a class="dropdown-item text-black-50" href="#modal">Modal</a></li>
+                <li><a class="dropdown-item text-black-50" href="#nav-t">Navs and tabs</a></li>
+                <li><a class="dropdown-item text-black-50" href="#spinner">Spinners</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#cardsExample">Grid system-Example</a></li>
+                <li><a class="dropdown-item" href="#accordionExample">Accordion-Example</a></li>
+                <li><a class="dropdown-item" href="#nav-tabExample">Nav-tabs-Example</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="bs-container">
+  
+      <h1 class="page-title">Bootstrap 5</h1>
+      
+      <div class="bs-block" id="form-range">
+          <h2 class="block-title"> Form (Range)</h2>
+          <label for="customRange1" class="form-label">Example Form (Range (ordinary))</label>
+          <input type="range" class="form-range" id="customRange1">
+          <label for="customRange3" class="form-label">Example Form (Range (step))</label>
+          <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+      </div>
+
+      <div class="bs-block" id="breakpoint">
+          <h2 class="block-title"> Breakpoint</h2>
+          <div class="container-sm bg-primary">100% wide until small breakpoint</div>
+          <br>
+          <div class="container-md bg-secondary">100% wide until medium breakpoint</div>
+          <br>
+          <div class="container-lg bg-success">100% wide until large breakpoint</div>
+          <br>
+          <div class="container-xl bg-danger">100% wide until extra large breakpoint</div>
+          <br>
+          <div class="container-xxl bg-warning">100% wide until extra extra large breakpoint</div>
+          <br>
+          <div class="container-fluid bg-dark text-white">fluid</div>
+      </div>
+        
+      <div class="bs-block" id="accordion">
+          <h2 class="block-title"> Accordion</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="bs-block" id="alert">
+          <h2 class="block-title"> Alert </h2>
+          <div class="alert alert-primary bg-dark text-white" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div class="alert alert-secondary bg-primary text-white" role="alert">
+            A simple secondary alert—check it out!
+          </div>
+          <div class="alert alert-success bg-warning text-white" role="alert">
+            A simple success alert—check it out!
+          </div>
+          <div class="alert alert-danger bg-danger" role="alert">
+            A simple danger alert—check it out!
+          </div>
+          <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+          </div>
+          <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+          </div>
+          
+      </div>
+        
+
+      <div class="bs-block" id="button">
+          <h2 class="block-title"> Button </h2>
+          <div class="d-flex">
+           <button type="button" class="btn btn-primary">Primary</button>
+           <button type="button" class="btn btn-secondary">Secondary</button>
+           <button type="button" class="btn btn-success">Success</button>
+           <button type="button" class="btn btn-danger">Danger</button>
+           
+          </div>
+          <div class="d-flex" id="flex-button2">
+           <button type="button" class="btn btn-warning">Warning</button>
+           <button type="button" class="btn btn-info">Info</button>
+           <button type="button" class="btn btn-light">Light</button>
+           <button type="button" class="btn btn-dark">Dark</button>
+           <button type="button" class="btn btn-link">Link</button>
+          </div>
+      </div>
+        
+
+      <div class="bs-block" id="dropdown">
+          <h2 class="block-title"> Dropdown button </h2>
+          <div class="d-flex">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button 1
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" >
+                Dropdown button 2
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">Акция</a></li>
+                <li><a class="dropdown-item" href="#">Вторая акция</a></li>
+              </ul>
+            </div>
+           
+          </div>
+      </div>
+        
+      <div class="bs-block" id="modal"> 
+                      <h2 class="block-title"> Modal</h2>
+                      <div class="d-flex">
+                        
+                        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Example modal 1
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    modal 1
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop-2">
+              Example modal 2
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel-2">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    modal 2
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop-3">
+              Example modal 3
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel-3">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    modal 3
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+
+
+
+
+            
+          </div>  
+      </div>    
+        
+      <div class="bs-block" id="nav-t">
+          <h2 class="block-title"> Navs and tabs</h2>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+              <button class="nav-link" id="nav-price-tab" data-bs-toggle="tab" data-bs-target="#nav-price" type="button" role="tab" aria-controls="nav-price" aria-selected="false">Price</button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">1</div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+            <div class="tab-pane fade" id="nav-price" role="tabpanel" aria-labelledby="nav-price-tab">price</div>
+          </div>
+      </div>
+
+      <div class="bs-block" id="spinner">
+          <h2 class="block-title"> Spinners</h2>
+            <div class="d-flex">
+              <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <!-- <div class="spinner-grow text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div> -->
+              <div class="spinner-img" role="status">
+                <img class="spinner-grow" id="spinner-grow-img" src="assets/img/icon2.png" alt="">
+              </div>
+              <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div class="spinner-img">
+                <img class="spinner-border" id="spinner-borde-img" src="assets/img/icon3.png" alt="">
+              </div>
+             
+
+            </div>
+
+      </div>
+      <h1 class="page-title">Bootstrap-примеры</h1>
+      
+      <div class= "bootstrap-example" >
+
+        <div class="container text-center my-5" id="cardsExample">
+          <h2 class="block-title"> Grid system-Example</h2>
+          <div class="row">
+            <div class="col-xl-4 col-md-5 text-start text-md-end bg-danger">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi culpa ut quaerat dolores reprehenderit assumenda quae magni at iusto perspiciatis voluptate exercitationem nisi delectus reiciendis, id quibusdam. Libero laudantium ut commodi! Commodi, labore ea cumque, ab voluptate distinctio facilis odit quaerat incidunt deleniti eveniet aperiam debitis reiciendis repudiandae dignissimos praesentium.
+            </div>
+            <div class="col-xl-8 col-md-7">
+              <div class="row">
+                
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3  bg-primary">
+                  <div class="product ">
+                    <div class="product-img">
+                      <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                    </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3 bg-danger" >
+                  <div class="product ">
+                    <div class="product-img">
+                      <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                    </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3 bg-secondary" >
+                  <div class="product ">
+                    <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                  </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3 bg-primary">
+                  <div class="product ">
+                    <div class="product-img">
+                      <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                    </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3 bg-danger" >
+                  <div class="product ">
+                    <div class="product-img">
+                      <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                    </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4  col-lg-6 col-md-12 col-sm-6 my-3 bg-secondary" >
+                  <div class="product ">
+                    <img src="assets/img/watch.webp" class="img-fluid mt-2" alt="watch">
+                  </div>
+                    <h4 class="product-title mt-2">Lorem, ipsum dolor.</h4>
+                    <h6 class="product-description mt-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, veritatis debitis eum non eveniet laborum quia doloremque sunt corporis in!</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-dark">Lorem</button>
+                      </div>
+                      <div class="col-12 col-md-6 mb-2">
+                        <button class="btn btn-warning">Lorem</button>
+                      </div>
+                    </div>
+                </div>
+              </div> 
+              </div>
+            </div>
+          </div> 
+
+        <div class="accordion accordion-faq" id="accordionExample">
+          <h2 class="block-title"> Accordion-Example</h2>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Як я можу зробити грошовий внесок для певного проекту?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong></strong> Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. Під ним, в долині, кипів холодний Черемош. По далеких горбах дрімали на сонці самотні оселі. Були так тихо i сумно, чорні смереки безперестанку спускали сум свій в Черемош, а він ніс його долом й оповідав. Вище, по безводних далеких недеях, нявки розводять свої безконечні танки, а по скелях ховається щезник.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Які є гарантії того, що кошти підуть саме на ту справу, що указана в назві проекту?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong></strong>Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. Під ним, в долині, кипів холодний Черемош. По далеких горбах дрімали на сонці самотні оселі. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Де я можу прочитати звіти щодо завершених проектів?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong></strong> Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. 
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNew">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNew" aria-expanded="false" aria-controls="collapseThree">
+                Чим відрізняються акції та проекти фонду?
+              </button>
+            </h2>
+            <div id="collapseNew" class="accordion-collapse collapse" aria-labelledby="headingNew" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong></strong> Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. 
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="nav-tab" id="nav-tabExample">
+          <h2 class="block-title"> Nav-tabs-Example</h2>
+          <ul class="nav nav-pills nav-faq mb-3" id="pills-tabExample" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Як я можу зробити</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Які є гарантії </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Де я можу прочитати звіти щодо завершених проектів?</button>
+            </li>
+            
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. Під ним, в долині, кипів холодний Черемош. По далеких горбах дрімали на сонці самотні оселі. Були так тихо i сумно, чорні смереки безперестанку спускали сум свій в Черемош, а він ніс його долом й оповідав. Вище, по безводних далеких недеях, нявки розводять свої безконечні танки, а по скелях ховається щезник.</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. Під ним, в долині, кипів холодний Черемош. По далеких горбах дрімали на сонці самотні оселі. Були так тихо i сумно, чорні смереки безперестанку спускали сум свій в Черемош, а він ніс його долом й оповідав. </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Котивсь зеленими царинками, маленький i білий, наче банька кульбаби, безстрашно забирався у темний ліс, де гаджуги кивали над ним галузками, як ведмідь лабами. Звідси дивився на гори, близькі й далекі верхи, що голубіли на небі, на смерекові чорні ліси з їх синім диханням, на ясну зелень царинок, що, мов дзеркала, блищали в рамах дерев. Під ним, в долині, кипів холодний Черемош. По далеких горбах дрімали на сонці самотні оселі.  </div>
+          </div>
+
+        </div>
+
+      </div>
+       
+
+               
+    
+    </section>    
+    </main>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

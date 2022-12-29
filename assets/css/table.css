@@ -1,0 +1,35 @@
+table{
+width: 90%;
+   background-color: rgb(221, 215, 109);
+   border: 1px solid black;
+   margin: 0 auto;
+}
+thead{
+    color: aliceblue;
+    background-color: rgb(6, 6, 105);
+    font-size: 30px;
+    text-align: center;
+}
+td{
+    border: 1px solid rgba(101, 4, 10, 0.991);
+    padding: 12px;
+    font-size: 16px;
+    text-align: center
+}
+tfoot{
+    color: rgb(232, 233, 219);
+    background-color: rgba(37, 1, 4, 0.137);
+    font-size: 30px;
+    text-align: center;  
+}
+.test-color{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0 400px;
+}
+.test-color_item{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+}

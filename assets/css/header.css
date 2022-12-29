@@ -1,0 +1,29 @@
+header{ background-color: bisque;
+}
+.site-navigation {
+    padding: 24px;
+    max-width: 1419px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+       
+    }
+.site-navigation ul {display: flex;
+    justify-content: end;
+}
+
+.site-navigation ul li{
+    padding: 0 15px;
+    font-size: 18px;
+}
+.site-navigation ul li a{
+    color: #000;
+    text-decoration: none;
+}
+.site-navigation ul li a:hover{
+text-decoration: underline;
+color: rgb(25, 10, 236);
+}
+
+
+

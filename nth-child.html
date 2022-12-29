@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="site-navigation">
+            <a href="index.html"> <img src="assets/img/logo.png" alt=""> </a>
+            <ul style="align-items: center;">
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="table.html">Table</a></li>
+                <li> <a href="flex-box.html">Flexbox</a></li>   
+                <li> <a href="position.html">Position</a></li> 
+                <li> <a href="font.html">Fonts</a></li>   
+                <li> <a href="main-tags.html">Main-tags</a></li>      
+                <li> <a href="nth-child.html">Nth-child</a></li> 
+                <li> <a href="bootstrap.html">Bootstrap</a></li>      
+            </ul>    
+        </nav>  
+         
+    </header>
+    <main>
+        <section class="child">
+            <h1 class="page-title">Nth-child</h1>
+            <div class="container-child"> 
+                <h2 class="exampl_title">Default </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:first-child; первый элемент </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between first-child">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:last-child; последний элемент</h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between last-child">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(5); 5-й элемент </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-5">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(odd); все нечетные элементы</h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-odd">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(even); все четные элементы </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-even">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(3n); каждый 3-й элемент, начиная с 3-го </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-3n">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(3n+2); каждый 3-й элемент, начиная с 2-го </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-3n2">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(-n+3); первые 3 элемента </h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child--n3">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(-2n+7); каждый 2-й, начиная с 7-го элемента, отчет справа налево</h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child--2n7">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(n+2):nth-child(-n+6); диапазон начиная с 2-го по 6-й элемент</h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-2_6">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+            <div class="container-child"> 
+                <h2 class="exampl_title">:nth-child(n+7); последние 4-е элемента</h2>     
+                <div class="exampl_list: d-flex justify-content-flex-space-between nth-child-7_10">
+          
+                    <div class="child-iteam">1</div>
+                    <div class="child-iteam">2</div>
+                    <div class="child-iteam">3</div>
+                    <div class="child-iteam">4 </div>
+                    <div class="child-iteam">5 </div>
+                    <div class="child-iteam">6 </div>
+                    <div class="child-iteam">7</div>
+                    <div class="child-iteam">8</div>
+                    <div class="child-iteam">9</div>
+                    <div class="child-iteam">10</div>
+                    
+                 </div>  
+            </div>
+<h1 class="page-title">Nth-child в информационных карточках</h1>
+            <div class="dog-row">
+                
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/bigl-dog.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Бигль (англ. beagle — гончая) 
+                    </div>
+                    <div class="dog-description"> Бигли обладают хорошим обонянием и используются прежде всего для охоты на кроликов и зайцев, очень часто используются на таможне для поиска взрывчатых веществ. 
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/Pastor Mallorquín-dog.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Майоркская овчарка (исп. Ca de Bestiar, Perro de Pastor Mallorquín)  
+                    </div>
+                    <div class="dog-description"> Порода собак, сформировавшаяся на Балеарских островах как сторожевая и пастушья. В формировании породы упор делался в первую очередь на рабочие качества, а не на экстерье
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/taksa_dog.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Та́кса (нем. Dachshund, dackel)
+                    </div>
+                    <div class="dog-description"> Порода южно-немецких норных охотничьих собак. Существует несколько разновидностей такс, отличающихся размерами и весом — стандартные, миниатюрные и кроличьи.
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/Labradoodle_dog.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Лабрадудль (англ. labradoodle)
+                    </div>
+                    <div class="dog-description"> Породная группа собак, созданная путём скрещивания лабрадора-ретривера и пуделя. Лабрадудли используются в канистерапии, поисково-спасательной службе. С лабрадудлями занимаются также и спортом: аджилити, фрисби, фристайл.
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/BlueLacy-dog.jpg"  class="img-fluid"alt="">
+                    </div>
+                    <div class="dog-title">Блю-лейси (англ. blue lacy) 
+                    </div>
+                    <div class="dog-description"> Блю-лейси обладают энергичным и активным темпераментом, высоко заинтересованы в работе и любопытны. При этом собаки этой породы не склонны проявлять гиперактивность и настойчивость в желании поиграть.
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/Epagneul_dog.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Голубой пикардийский спаниель (фр. Épagneul bleu de Picardie)
+                    </div>
+                    <div class="dog-description"> порода собак, выведенная в Пикардии для охоты на водоплавающую птицу в труднопроходимой местности/
+                    </div>
+                   
+                 </div>  
+                <div class="container-dog">
+                    <div class="dog-img">
+                        <img src="assets/img/Canecorso-dog.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="dog-title">Ка́не-ко́рсо (итал. Cane corso italiano)  
+                    </div>
+                    <div class="dog-description"> порода собак, один из самых древних представителей группы молоссов, первые упоминания о котором появились в глубокой древности.
+                    </div>
+                   
+                 </div>  
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+        
+    </main>
